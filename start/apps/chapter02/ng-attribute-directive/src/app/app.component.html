@@ -7,7 +7,12 @@
 
 <div class="content p-4" role="main">
   <div class="relative mb-4">
-    <input type="text" placeholder="Quick Search..." class="pr-4 !pl-10 py-2" />
+    <input
+      [(ngModel)]="searchText"
+      type="text"
+      placeholder="Quick Search..."
+      class="pr-4 !pl-10 py-2"
+    />
     <svg
       width="24"
       height="24"
@@ -23,7 +28,11 @@
       <circle cx="11" cy="11" r="6" />
     </svg>
   </div>
-  <p class="text-content max-w-2xl m-auto">
+  <p
+    class="text-content max-w-2xl m-auto"
+    appHighlight
+    [highlightText]="searchText"
+  >
     Silent sir say desire fat him letter. Whatever settling goodness too and
     honoured she building answered her. Strongly thoughts remember mr to do
     consider debating. Spirits musical behaved on we he farther letters.
