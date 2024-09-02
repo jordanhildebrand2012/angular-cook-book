@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { NotificationsService } from '../services/notifications.service';
 
 @Component({
   selector: 'app-notifications-manager',
@@ -6,20 +7,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./notifications-manager.component.scss'],
 })
 export class NotificationsManagerComponent {
-  notificationsCount = 0;
+  notficationService = inject(NotificationsService);
+  notificationsCount$ = this.notficationService.count$;
 
   addNotification() {
-    this.notificationsCount++;
+    const currentValue = this.notificationsCount$.getValue();
+    this.notficationService.setCount(currentValue + 1);
   }
 
   removeNotification() {
-    if (this.notificationsCount == 0) {
+    const currentValue = this.notificationsCount$.getValue();
+    if (currentValue == 0) {
       return;
     }
-    this.notificationsCount--;
+    this.notficationService.setCount(currentValue - 1);
   }
 
   resetCount() {
-    this.notificationsCount = 0;
+    this.notficationService.setCount(0);
   }
 }

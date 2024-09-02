@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @Component({
   selector: 'app-root',
@@ -6,11 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  addNewPicture() {
-    console.log('added new picture');
+  addNewPicture(gallery: GalleryComponent) {
+    // console.log('added new picture', gallery);
+    gallery.pictures.unshift(gallery.generateImage());
   }
 
-  removeFirstPicture() {
-    console.log('removed first picture');
+  removeFirstPicture(gallery: GalleryComponent) {
+    // console.log('removed first picture', gallery);
+    gallery.pictures.shift();
   }
 }
