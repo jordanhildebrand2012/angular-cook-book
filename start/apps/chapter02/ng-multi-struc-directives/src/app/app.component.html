@@ -37,15 +37,22 @@
       <span class="text-lg material-symbols-outlined"> shopping_cart </span>
     </h2>
     <div class="fruits">
-      <div class="fruits__item" *ngFor="let item of bucket">
-        <div class="fruits__item__title">{{ item.name }}</div>
-        <div
-          class="fruites__item__delete-icon"
-          (click)="deleteFromBucket(item)"
-        >
-          <div class="material-symbols-outlined">delete</div>
+      <ng-container *ngIf="bucket.length > 0; else bucketEmptyMessage">
+        <div class="fruits__item" *ngFor="let item of bucket">
+          <div class="fruits__item__title">{{ item.name }}</div>
+          <div
+            class="fruites__item__delete-icon"
+            (click)="deleteFromBucket(item)"
+          >
+            <div class="material-symbols-outlined">delete</div>
+          </div>
         </div>
-      </div>
+      </ng-container>
+      <ng-template #bucketEmptyMessage>
+        <div class="fruits__no-items-msg">
+          No item in bucket. Add some fruits!
+        </div>
+      </ng-template>
     </div>
   </div>
 </main>

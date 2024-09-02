@@ -2,6 +2,7 @@ import { Directive, ElementRef, HostBinding, Input } from '@angular/core';
 
 @Directive({
   selector: '[appButton]',
+  standalone: true,
 })
 export class ButtonDirective {
   @HostBinding('attr.color')
