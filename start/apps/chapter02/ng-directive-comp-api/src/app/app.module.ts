@@ -10,6 +10,7 @@ import { TooltipDirective } from './directives/tooltip.directive';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { ButtonFilledDirective } from './directives/button-filled.directive';
 import { ButtonOutlinedDirective } from './directives/button-outlined.directive';
+import { ButtonWithTooltipDirective } from './directives/button-with-tooltip.directive';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ButtonOutlinedDirective } from './directives/button-outlined.directive'
     TooltipComponent,
     ButtonFilledDirective,
     ButtonOutlinedDirective,
+    ButtonWithTooltipDirective,
   ],
   imports: [
     HeaderComponent,
