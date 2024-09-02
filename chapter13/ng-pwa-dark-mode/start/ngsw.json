@@ -1,0 +1,89 @@
+{
+  "configVersion": 1,
+  "timestamp": 1725265941610,
+  "index": "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/166.9f4d1efe6371b6d0.js",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/favicon.ico",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/index.html",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/main.785e894bf36a1a1d.js",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/manifest.webmanifest",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/polyfills.d2a9e6c948cb90cf.js",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/runtime.693f8151b988e77c.js",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/styles.213a1fa1736a0a54.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/box-model.png",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/cover.jpg",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-128x128.png",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-144x144.png",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-152x152.png",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-192x192.png",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-384x384.png",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-512x512.png",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-72x72.png",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-96x96.png",
+        "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/profile.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/166.9f4d1efe6371b6d0.js": "60862572aa06f18c4465d1c45d828c7f9ca2a98e",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/box-model.png": "a6b449f03994a1ee5fd9b4e95b5c6ebf8288b07c",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/cover.jpg": "609ffd1d4eaab96b2df79e14540015bccf4e2ed9",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/assets/profile.png": "f09fcf7522ea67374d8b1885e120b0bf032a64f0",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/favicon.ico": "4e23d0f9b6ddaf3c9ddef90dbaed2342941297b5",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/index.html": "cee25268f70f794d8b58298c30403f5b9eb07806",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/main.785e894bf36a1a1d.js": "1b2d0bad1288e01f7ceda7d5d960a798f1287881",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/manifest.webmanifest": "5dc7a2a8236c90c85e1d23289f50c2c694b0fc16",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/polyfills.d2a9e6c948cb90cf.js": "a196ba915065b2cabdc17f6af519662b9b81b69a",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/runtime.693f8151b988e77c.js": "b6f8d5b7161b6c33f29a4098de5a3a889bc843ce",
+    "/Angular-Cookbook-2E/chapter13/ng-pwa-dark-mode/start/styles.213a1fa1736a0a54.css": "08ab63bb382ba4364017257f8b0f7b8cda98fe27"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
