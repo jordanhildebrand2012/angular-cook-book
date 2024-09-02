@@ -1,17 +1,25 @@
 import { CommonModule } from '@angular/common';
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, effect, signal, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '@codewithahsan/ng-cb-ui';
 import { Task, TasksFilter } from './task.model';
+import { SnackbarComponent } from './components/snackbar/snackbar.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   standalone: true,
-  imports: [HeaderComponent, CommonModule, RouterModule, HeaderComponent],
+  imports: [
+    HeaderComponent,
+    CommonModule,
+    RouterModule,
+    HeaderComponent,
+    SnackbarComponent,
+  ],
 })
 export class AppComponent {
+  @ViewChild(SnackbarComponent) snackbar!: SnackbarComponent;
   tasks = signal<Task[]>([
     { title: 'Buy milk', completed: false },
     { title: 'Read a book', completed: true },
@@ -60,4 +68,11 @@ export class AppComponent {
     );
     this.tasks.set(updatedTasks);
   }
+
+  completedEffectRef = effect(() => {
+    const tasks = this.tasks();
+    if (this.finishedTasksCout() === tasks.length && tasks.length > 0) {
+      this.snackbar.show();
+    }
+  });
 }
