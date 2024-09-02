@@ -14,13 +14,18 @@
 
     <!-- Task Input -->
     <div class="mb-4">
-      <input class="p-2 border rounded mr-2" placeholder="New task..." />
-      <button>Add</button>
+      <input
+        #titleInput
+        (keydown.enter)="addTask(titleInput)"
+        class="p-2 border rounded mr-2"
+        placeholder="New task..."
+      />
+      <button (click)="addTask(titleInput)">Add</button>
     </div>
 
     <!-- Task List -->
     <ul>
-      @for (task of tasks(); track $index) {
+      @for (task of filteredTasks(); track $index) {
       <li
         (click)="toggleTask(task)"
         class="mb-2 flex gap-4 items-center cursor-pointer hover:opacity-70"
@@ -35,9 +40,29 @@
 
     <!-- Filters -->
     <div class="mt-4">
-      <button class="p-2 rounded mr-2">All</button>
-      <button class="p-2 rounded mr-2">Active</button>
-      <button class="p-2 rounded">Completed</button>
+      <button
+        (click)="changeFilter(filters.All)"
+        [ngClass]="{ '!bg-purple-500 text-white': filter() === filters.All }"
+        class="p-2 rounded mr-2"
+      >
+        All
+      </button>
+      <button
+        (click)="changeFilter(filters.Active)"
+        [ngClass]="{ '!bg-purple-500 text-white': filter() === filters.Active }"
+        class="p-2 rounded mr-2"
+      >
+        Active
+      </button>
+      <button
+        (click)="changeFilter(filters.Complete)"
+        [ngClass]="{
+          '!bg-purple-500 text-white': filter() === filters.Complete
+        }"
+        class="p-2 rounded"
+      >
+        Completed
+      </button>
     </div>
   </div>
 </main>
